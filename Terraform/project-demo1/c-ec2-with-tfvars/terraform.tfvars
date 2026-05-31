@@ -1,0 +1,5 @@
+aws_region    = "us-east-1"
+instance_type = "t2.micro"
+ami_id        = "ami-05cf1e9f73fbad2e2"
+instance_name = "EC2-WithTfvars"
+environment   = "development"
