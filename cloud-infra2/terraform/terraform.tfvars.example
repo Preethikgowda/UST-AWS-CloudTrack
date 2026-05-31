@@ -1,0 +1,32 @@
+region      = "us-east-1"
+name_prefix = "nutritrack-prod"
+domain_name = "invest-iq.online"
+
+# Leave empty to auto-discover Route53 zone by domain_name.
+route53_zone_id = ""
+
+# Existing resources created by nutritrack-aws-cli-provision.sh
+custom_vpc_name         = "nutritrack-prod-vpc"
+alb_name                = "nutritrack-prod-alb"
+frontend_tg_name        = "nutritrack-prod-frontend-tg"
+portfolio_tg_name       = "nutritrack-prod-portfolio-tg"
+market_tg_name          = "nutritrack-prod-market-tg"
+backend_sg_name         = "nutritrack-prod-backend-sg"
+private_app_rt_az1_name = "nutritrack-prod-private-app-rt-az1"
+private_app_rt_az2_name = "nutritrack-prod-private-app-rt-az2"
+
+# HTTPS and certificate
+create_acm_certificate      = true
+existing_acm_certificate_arn = ""
+create_https_listener       = true
+existing_https_listener_arn = ""
+create_https_path_rules     = true
+
+# If RDS is in default VPC, enable peering.
+# Provide either `existing_rds_sg_id` OR `existing_rds_instance_identifier`.
+enable_default_vpc_rds_peering = true
+existing_rds_sg_id             = "sg-REPLACE_ME"
+existing_rds_instance_identifier = ""
+
+# Optional: set only if your RDS subnets are associated to non-main route tables.
+default_vpc_route_table_ids = []

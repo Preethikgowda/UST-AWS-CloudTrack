@@ -1,0 +1,59 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at 8% -10%, rgba(79, 70, 229, 0.18), transparent 42%),
+    radial-gradient(circle at 92% 0%, rgba(59, 130, 246, 0.14), transparent 36%),
+    #020617;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.app-card {
+  background: #0f172a;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(2, 6, 23, 0.36);
+}
+
+.page-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

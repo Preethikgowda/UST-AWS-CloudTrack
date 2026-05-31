@@ -1,0 +1,25 @@
+# ============================================================
+# IntelliWealth – Market Intelligence Service Dependencies
+# ============================================================
+
+# Core
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Database
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.14.1
+
+# Redis
+redis[hiredis]==5.2.1
+
+# Utilities
+httpx==0.28.1
+python-dotenv==1.0.1
+numpy==2.2.1
+
+# Health / Monitoring
+psutil==6.1.1
